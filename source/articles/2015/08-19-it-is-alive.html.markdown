@@ -1,5 +1,5 @@
 ---
-title: Grocery Price Book Tech Blog is Alive
+title: Tech Blog is Alive
 date: 2015-08-19
 tags: gems,services
 ---
