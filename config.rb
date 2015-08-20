@@ -1,5 +1,3 @@
-require 'dotenv'
-Dotenv.load('.env')
 ###
 # Blog settings
 ###

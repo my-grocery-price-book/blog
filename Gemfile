@@ -4,7 +4,8 @@ source 'http://rubygems.org'
 
 gem 'middleman', '~> 3.4'
 gem 'middleman-blog', '~> 3.5'
-gem 'dotenv'
+gem 'builder', '~> 3.0' # For feed.xml.builder
 
-# For feed.xml.builder
-gem 'builder', '~> 3.0'
+group :development do
+  gem 'dotenv'
+end
