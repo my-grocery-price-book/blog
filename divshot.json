@@ -1,0 +1,6 @@
+{
+  "name": "my-grocery-price-book-blog",
+  "root": "build",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
