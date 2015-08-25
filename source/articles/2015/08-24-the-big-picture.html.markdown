@@ -5,7 +5,7 @@ tags: price-book,services
 ---
 
 So what am i trying to accomplish is building a online price book you can use for your grocery shopping READMORE
-If you don't know what a Price Book is I suggest you read [Wikipedia Definetion](https://en.wikipedia.org/wiki/Price_book)
+If you don't know what a Price Book is I suggest you read [Wikipedia Definition](https://en.wikipedia.org/wiki/Price_book)
 and Melanie Pinola's blog article on [How to Save the Most Money on Your Grocery Budget with a Price Book](http://lifehacker.com/how-to-save-the-most-money-on-your-grocery-budget-with-1518202640)
 
 Below I have a flow-chart (built with [draw.io](http://www.draw.io/)) that shows you what a grocery price booker
