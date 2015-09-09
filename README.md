@@ -13,5 +13,5 @@ bundle install
 
 ```
 #!sh
-bin/dotenv bin/middleman # dotenv will load your .env file
+./run.sh
 ```
