@@ -24,8 +24,7 @@
     <nav class="blog-nav">
       <a class="blog-nav-item active" href="/">Blog</a>
       <a class="blog-nav-item" href="http://www.my-grocery-price-book.co.za">App</a>
-      <a class="blog-nav-item" href="http://api.my-grocery-price-book.co.za">Api</a>
-      <a class="blog-nav-item" href="https://github.com/my-grocery-price-book">Code</a>
+      <a class="blog-nav-item" href="https://github.com/my-grocery-price-book/www">Code</a>
     </nav>
   </div>
 </div>
@@ -74,13 +73,13 @@
         <h4>By Date</h4>
         <ol class="list-unstyled">
           <% group_by_year_articles = blog.articles.group_by { |a| a.date.year } %>
-          <% if group_by_year_articles.size > 1 %>
+          <% if group_by_year_articles.size > 2 %>
             <% group_by_year_articles.each do |year, articles| %>
               <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
             <% end %>
           <% else %>
             <% group_by_month_articles = blog.articles.group_by { |a| [a.date.year,a.date.month] } %>
-            <% if group_by_month_articles.size > 1 %>
+            <% if group_by_month_articles.size > 2 %>
               <% group_by_month_articles.each do |ymd, articles| %>
                 <li><%= link_to "#{ymd.join('-')} (#{articles.size})", blog_month_path(*ymd) %></li>
               <% end %>
