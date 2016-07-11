@@ -76,11 +76,16 @@ page "/feed.xml", layout: false
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def reading_time(input)
+    words_per_minute = 180
+
+    words = input.split.size
+    minutes = (words / words_per_minute).floor
+    minutes_label = minutes === 1 ? ' minute' : ' minutes'
+    minutes > 0 ? "about #{minutes} #{minutes_label}" : 'less than 1 minute'
+  end
+end
 
 set :css_dir, 'stylesheets'
 
